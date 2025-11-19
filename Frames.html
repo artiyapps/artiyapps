@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Frames</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+     
+  header img {
+            max-height: 50px;
+            vertical-align: middle;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+        }
+
+        header nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .custom-link {
+            color: inherit; 
+            text-decoration: none; 
+            cursor: pointer; 
+        }
+        .description {
+            padding: 20px;
+            text-align: center;
+        }
+        .categories, .collections {
+            padding: 20px;
+        }
+        .categories ul, .collections ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .categories li, .collections li {
+            margin: 5px 0;
+            font-size: 1.2rem;
+        }
+     
+        .product-section {
+            padding: 40px 10%;
+            text-align: center;
+        }
+
+        .product-heading {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .product-image {
+            width: 80%;
+            max-width: 500px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .product-caption {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .product-price {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #007bff;
+          text-align: left;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            font-size: 20px;
+            color: #888;
+        }
+
+        .order-details {
+            margin-top: 30px;
+            font-size: 16px;
+            color: #444;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 12px 30px;
+            margin: 10px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .square {
+            background-color: #333;
+        }
+
+        .curved {
+            background-color: #25d366;
+        }
+
+        .button:hover {
+            opacity: 0.8;
+        }
+  .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+     <header>
+        <h1><p style="color:#f4f4f4"><b>
+      <img src="images/img.png">
+        Artiy Apps™</p></b></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#featured">Featured</a>
+            <a href="index.html">Contact</a>
+        </nav>
+    </header>
+
+     <div class="categories" id="categories">
+        <h2>Frames</h2>
+        <ul style="list-style-type:circle;">
+            <li>
+                <a href="#A4 frame" class="custom-link">A4 frame</a>
+            </li>
+             <li>
+                <a href="#Caricature frame" class="custom-link">Caricature frame</a>
+            </li>
+             <li>
+                <a href="#A3 frame" class="custom-link">A3 frame</a>
+            </li>
+             <li>
+                <a href="#A5 frame" class="custom-link">A5 frame</a>
+            </li>
+             <li>
+                <a href="#mini frame" class="custom-link">Mini frame</a>
+            </li>
+             <li>
+                <a href="#micro frame" class="custom-link">Micro frame</a>
+            </li>
+        </ul>
+     </div>
+    <div class="product-section" id="featured">
+        <h2 class="product-heading" id="A4 frame">A4 Frame</h2>
+
+        <div class="image-gallery">
+             <a href="https://www.instagram.com/p/C_NLCEUSFFp/" target="_blank">
+                <img class="product-image" src="images/img21.jpg" alt="A4 Frame">
+            </a>
+        </div>
+
+        <p class="product-caption">This is a beautiful item for our loved one, Perfect gift for birthdays, anniversaries or special surprises. Bring joy, one frame at a time!</p>
+  
+        <p class="product-price">
+            <span class="old-price">₹449</span> ₹349
+        </p>
+
+        <div class="order-details">
+            <p>Starting price-₹349 ,price varies based on frame size and materials used.</p>
+        </div>
+
+        <div class="buttons">
+            <a href="https://wa.me/+918891774997?text=Hi%20*Artiy%20Apps*,%0ANeed%20best%20price%20for%20A4%20frame%2C%20for%20customisation" class="button square">Order</a>
+            </div>
+    </div>
+     <div class="product-section">
+        <h2 class="product-heading" id="Caricature frame">Caricature Frame</h2>
+
+        <div class="image-gallery">
+            <a href="https://www.instagram.com/p/DAtFYe6y9ZP/" target="_blank">
+                <img class="product-image" src="https://artiyapps.ct.ws/wp-content/uploads/2024/12/IMG-20241215-WA0090.jpg" alt="Caricature Frame">
+            </a>
+        </div>
+
+        <p class="product-caption">This is a beautiful item for our loved one, Perfect gift for birthdays, anniversaries or special surprises. Bring joy, one frame at a time!</p>
+  
+        <p class="product-price">
+            <span class="old-price">₹499</span> ₹399
+        </p>
+
+        <div class="order-details">
+            <p>Starting price-₹399 ,price varies based on frame size and materials used.</p>
+        </div>
+
+        <div class="buttons">
+            <a href="https://wa.me/+918891774997?text=Hi%20*Artiy%20Apps*,%0ANeed%20best%20price%20for%20Caricature%20frame%2C%20for%20customisation" class="button square">Order</a>
+            </div>
+    </div>
+     <div class="product-section">
+        <h2 class="product-heading" id="A3 frame">A3 Frame</h2>
+
+        <div class="image-gallery">
+              <a href="#A3frame" target="_blank">
+             <img class="product-image" src="images/img22.jpg" alt="A3 Frame">
+              </a>
+        </div>
+
+        <p class="product-caption">This is a beautiful item for our loved one, Perfect gift for birthdays, anniversaries or special surprises. Bring joy, one frame at a time!</p>
+  
+        <p class="product-price">
+            <span class="old-price">₹599</span> ₹499
+        </p>
+
+        <div class="order-details">
+            <p>Starting price-₹499 ,price varies based on frame size and materials used.</p>
+        </div>
+
+        <div class="buttons">
+            <a href="https://wa.me/+918891774997?text=Hi%20*Artiy%20Apps*,%0ANeed%20best%20price%20for%20A3%20frame%2C%20for%20customisation" class="button square">Order</a>
+            </div>
+    </div>
+     <div class="product-section">
+        <h2 class="product-heading" id="A5 frame">A5 Frame</h2>
+
+        <div class="image-gallery">
+             <a href="#A5frame" target="_blank">
+            <img class="product-image" src="images/img23.jpg" alt="A5 Frame">
+             </a>
+        </div>
+
+        <p class="product-caption">This is a beautiful item for our loved one, Perfect gift for birthdays, anniversaries or special surprises. Bring joy, one frame at a time!</p>
+  
+        <p class="product-price">
+            <span class="old-price">₹369</span> ₹299
+        </p>
+
+        <div class="order-details">
+            <p>Starting price-₹299 ,price varies based on frame size and materials used.</p>
+        </div>
+
+        <div class="buttons">
+            <a href="https://wa.me/+918891774997?text=Hi%20*Artiy%20Apps*,%0ANeed%20best%20price%20for%20A5%20frame%2C%20for%20customisation" class="button square">Order</a>
+            </div>
+    </div>
+     <div class="product-section">
+        <h2 class="product-heading" id="mini frame">Mini Frame</h2>
+
+        <div class="image-gallery">
+             <a href="https://www.instagram.com/p/DB1KsS3Sv1E/" target="_blank">
+            <img class="product-image" src="images/img24.jpg" alt="mini Frame">
+             </a>
+        </div>
+
+        <p class="product-caption">This is a beautiful item for our loved one, Perfect gift for birthdays, anniversaries or special surprises. Bring joy, one frame at a time!</p>
+  
+        <p class="product-price">
+            <span class="old-price">₹199</span> ₹149
+        </p>
+
+        <div class="order-details">
+            <p>Starting price-₹149 ,price varies based on frame size and materials used.</p>
+        </div>
+
+        <div class="buttons">
+            <a href="https://wa.me/+918891774997?text=Hi%20*Artiy%20Apps*,%0ANeed%20best%20price%20for%20Mini%20frame%2C%20for%20customisation" class="button square">Order</a>
+            </div>
+    </div>
+     <div class="product-section">
+        <h2 class="product-heading" id="micro frame">Micro Frame</h2>
+
+        <div class="image-gallery">
+             <a href="https" target="_blank">
+            <img class="product-image" src="images/img25.jpg" alt="micro Frame">
+             </a>
+        </div>
+
+        <p class="product-caption">This is a beautiful item for our loved one, Perfect gift for birthdays, anniversaries or special surprises. Bring joy, one frame at a time!</p>
+  
+        <p class="product-price">
+            <span class="old-price">₹109</span> ₹85
+        </p>
+
+        <div class="order-details">
+            <p>Starting price-₹85 ,price varies based on frame size and materials used.</p>
+        </div>
+
+        <div class="buttons">
+            <a href="https://wa.me/+918891774997?text=Hi%20*Artiy%20Apps*,%0ANeed%20best%20price%20for%20Micro%20frame%2C%20for%20customisation" class="button square">Order</a>
+            </div>
+    </div>
+  <div class="feedback">
+        <h2>Feedback</h2>
+        <form>
+            <textarea placeholder="Write your feedback here..." rows="4" cols="50"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>©2020 <a href="index.html" class="custom-link">Artiy Apps</a> | Powered by <a href="#AM Axion" class="custom-link">AM Axion</a></p>
+    </div>
+
+</body>
+</html>
