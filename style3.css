@@ -110,6 +110,19 @@ body {
   padding: 2px 6px;
   border-radius: 50%;
 }
+
+.categories, .collections {
+  padding: 20px;
+}
+       
+.categories ul, .collections ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .categories li, .collections li {
+            margin: 5px 0;
+            font-size: 1.2rem;
+        }
         .product-section {
             padding: 40px 10%;
             text-align: center;
