@@ -1,380 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8">
-    <title>Artiy Apps</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-  header img {
-            max-height: 50px;
-            vertical-align: middle;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-decoration: none;
-            font-weight: bold;
-            text-align: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artiy Apps</title>
 
-        header h1 {
-            font-size: 2em;
-        }
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 
-        header nav a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .custom-link {
-            color: inherit; 
-            text-decoration: none; 
-            cursor: pointer; 
-        }
-        .description {
-            padding: 20px;
-            text-align: center;
-        }
-        .categories, .collections {
-            padding: 20px;
-        }
-        .categories ul, .collections ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .categories li, .collections li {
-            margin: 5px 0;
-            font-size: 1.2rem;
-        }
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px;
-        }
-        .product {
-            background-color: white;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .product img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        .product button {
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1><p style="color:#f4f4f4"><b>
-      <img src="images/img.webp">
-        Artiy Apps™</p></b></h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#categories">Categories</a>
-            <a href="#collections">Featured</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
-    <div class="description">
-           <p>Welcome to Artiy Apps, it's a creative crafting business offering unique, handmade items that bring artistry and individuality to your life. From custom gifts to personalized décor, we create quality products designed to inspire and delight.</p>
-        <nav>
-             <div class="contact" id="contact">
-            <a href="https://www.instagram.com/artiy_apps" class="custom-link">
-        <i class="fab fa-instagram" style="font-size: 20px; margin: 0 5px; color: #333;"></i>
-              </a>
-            <a href="https://wa.me/+918129417870/?text=Hi%20*Artiy%20Apps*!%0A%0AI’m%20amazed%20by%20your%20handcrafted%20creations!%20Could%20you%20share%20more%20details%20or%20recommend%20something%20unique%20for%20me?%20" class="custom-link">
-        <i class="fab fa-whatsapp" style="font-size: 20px; margin: 0 5px; color: #333;"></i>
-              </a>
-            <a href="https://x.com" class="custom-link">
-        <i class="fab fa-twitter" style="font-size: 20px; margin: 0 5px; color: #333;"></i>
-              </a>
-            <a href="images" class="custom-link">
-        <i class="fab fa-youtube" style="font-size: 20px; margin: 0 5px; color: #333;"></i>
-              </a>
-        </nav>
-        </div>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+
+      <h2 class="logo"><img src="images/Artiy-apps.svg" class="my-logo">ArtiyApps</h2>
+
+      
+
+      <div class="nav-icons">
+  <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
+
+  <div class="search-box" id="searchBox">
+    <input type="text" placeholder="Search..." id="searchInput">
+  </div>
+
+  <div class="cart">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span>0</span>
+  </div>
+</div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#product">Featured</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
     </div>
+  </header>
 
-    <div class="categories" id="categories">
-        <h2>Categories</h2>
-        <ul style="list-style-type:circle;">
-            <li>
-                <a href="#hamper set" class="custom-link">Hamper set</a>
-            </li>
-            <li>
-                <a href="#Wedding hamper" class="custom-link">Wedding hamper</a>
-            </li>
-            <li>
-                <a href="#Engagement hamper" class="custom-link">Engagement hamper</a>
-            </li>
-            <li>
-                <a href="#chocolate hamper" class="custom-link">Chocolate hamper</a>
-            </li>
-            <li>
-                <a href="#Birthday hamper" class="custom-link">Birthday hamper</a>
-            </li>
-            <li>
-                <a href="#Trolley hamper" class="custom-link">Trolley hamper</a>
-            </li>
-            <li>
-                <a href="#dress hamper" class="custom-link">Dress hamper</a>
-            </li>
-            <li>
-                <a href="#Flower bouquet" class="custom-link">Flower bouquet</a>
-            </li>
-            <li>
-                <a href="#chocolate bouquet" class="custom-link">Chocolate bouquet</a>
-            </li>
-            <li>
-                <a href="#mini chocolate bouquet" class="custom-link">Mini chocolate bouquet</a>
-            </li>
-            <li>
-                <a href="#A4 frame" class="custom-link">A4 frame</a>
-            </li>
-            <li>
-                <a href="#A4 frame" class="custom-link">A3 frame</a>
-            </li>
-            <li>
-                <a href="#A4 frame" class="custom-link">A5 frame</a>
-            </li>
-            <li>
-                <a href="#A4 frame" class="custom-link">Mini frame</a>
-            </li>
-            <li>
-                <a href="#A4 frame" class="custom-link">Micro frame</a>
-            </li>
-            <li>
-                <a href="#polaroids" class="custom-link">Polaroids</a>
-            </li>
-            <li>
-                <a href="#ring album" class="custom-link">Ring album</a>
-            </li>
-            <li>
-                <a href="#birthday cards" class="custom-link">Birthday cards</a>
-            </li>
-            <li>
-                <a href="#customized wallets" class="custom-link">Customized wallets</a>
-            </li>
-            <li>
-                <a href="#customized chocolate" class="custom-link">Customized chocolate</a>
-            </li>
-            <li>
-                <a href="#gift box" class="custom-link">Gift box</a>
-            </li>
-            <li>
-                <a href="#chocolate box" class="custom-link">chocolate box</a>
-            </li>
-            <li>
-                <a href="#name revealing box" class="custom-link">Name revealing box</a>
-            </li>
-            <li>
-                <a href="#ceremony box" class="custom-link">Ceremony box</a>
-            </li>
-            <li>
-                <a href="#money tower" class="custom-link">Money tower</a>
-            </li>
-            <li>
-                <a href="#hoop frame" class="custom-link">Hoop frame</a>
-            </li>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="container hero-wrapper">
+
+      <div class="hero-text">
+        <h1>Where Gifts <br>Become Memories</h1>
+
+        <p>
+          Handmade gifts designed to delight 
+          and make every moment unforgettable.
+        </p>
+        <a href="shop.html">
+        <button class="hero-btn">Order Now</button>
+          </a>
+      </div>
+
+      <div class="hero-image">
+        <div class="shape-bg"></div>
+        <img src="images/Hamper.webp" alt="Craft Bag">
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===== SECTION 3 ===== -->
+  <!-- ===== DEPOT TEXT PART ===== -->
+  <section class="depot">
+    <div class="container depot-wrapper">
+
+      <div class="depot-text">
+        <h2>Crafted with Creativity & Care</h2>
+
+        <p>
+          A creative crafting brand offering unique handmade
+          gifts and personalized décor designed to inspire and delight.
+          From custom surprises to meaningful creations, every piece is carefully
+          made to match your ideas and bring joy to your loved ones.
+        </p>
+      </div>
+
+      <div class="depot-cards">
+        <div class="card">
+          <i class="fa-regular fa-lightbulb"></i>
+          <h4>Creative Ideas</h4>
+        </div>
+
+        <div class="card transparent-card">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <h4>Customized</h4>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===== DEPOT BOTTOM CARDS ===== -->
+  <section class="depot-bottom">
+    <div class="container">
+
+      <div class="bottom-cards">
+
+        <div class="card">
+          <i class="fa-solid fa-gift"></i>
+          <h4>Handmade</h4>
+        </div>
+
+        <div class="card transparent-card">
+          <i class="fa-solid fa-user-pen"></i>
+          <h4>Personalized</h4>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-truck"></i>
+          <h4>Perfect Delivery</h4>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===== PRODUCT GALLERY ===== -->
+  <section class="gallery" id="product">
+    <div class="container">
+
+      <h2 class="gallery-title">Product Gallery</h2>
+
+      <div class="gallery-grid">
+
+        <div class="g-card" id="Trolley hamper">
+          <a href="shop.html#Trolley hamper">
+          <img src="images/Trolley-hamper.webp" alt="">
+          <h4>Trolley hamper</h4>
+          <p><span>₹14999</span> ₹12499</p>
+          </a>
+        </div>
+
+        <div class="g-card" id="Wedding hamper">
+          <a href="shop.html#Wedding hamper">
+          <img src="images/Wedding-hamper.webp" alt="">
+          <h4>Wedding hamper</h4>
+          <p><span>₹24999</span> ₹19999</p>
+          </a>
+        </div>
+
+        <div class="g-card" id="Chocolate Bouquet">
+          <a href="shop.html#Chocolate Bouquet">
+          <img src="images/Chocolate-Bouquet.webp" alt="">
+          <h4>Chocolate Bouquet</h4>
+          <p><span>₹309</span> ₹249</p>
+          </a>
+        </div>
+
+        <div class="g-card" id="Birthday gift">
+          <a href="shop.html#Birthday gift">
+          <img src="images/Birthday-gift.webp" alt="">
+          <h4>Birthday gift</h4>
+          <p><span>₹1499</span> ₹1099</p>
+          </a>
+        </div>
+
+        <div class="g-card" id="Flower bouquet">
+          <a href="shop.html#Flower bouquet">
+          <img src="images/Flower-bouquet.webp" alt="">
+          <h4>Flower bouquet</h4>
+          <p><span>₹1199</span> ₹899</p>
+          </a>
+        </div>
+
+        <div class="g-card" id="Sketch wallet">
+          <a href="shop.html#Sketch wallet">
+          <img src="images/Sketch-wallet.webp" alt="">
+          <h4>Sketch wallet</h4>
+          <p><span>₹449</span> ₹399</p>
+          </a>
+        </div>
+
+        <div class="g-card" id="Frames">
+          <a href="shop.html#Frames">
+          <img src="images/Frames.webp" alt="">
+          <h4>Frames</h4>
+          <p><span>₹449</span> ₹349</p>
+          </a>
+        </div>
+
+        <div class="g-card" id="Gift box">
+          <a href="shop.html#Gift box">
+          <img src="images/Gift-box.webp" alt="">
+          <h4>Gift box</h4>
+          <p><span>₹299</span> ₹249</p>
+            </a>
+        </div>
+
+      </div>
+      <p class="view-more-text">
+  <a href="shop.html" class="view-link">
+    Explore more products
+    <span class="arrow">>></span>
+  </a>
+</p>
+
+    </div>
+  </section>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-wrapper">
+
+      <div class="footer-col" id="about">
+        <h3>ArtiyApps</h3>
+        <p>
+          Since 2019, we have been creating handmade gifts
+          and personalized décor for life’s special moments.
+          Each piece reflects our experience, your ideas, and 
+          the care we put into every celebration.
+        </p>
+      </div>
+
+      <div class="footer-col" id="contact">
+        <h4>Social</h4>
+        <ul>
+          <li><a href="https://whatsapp.com/channel/0029Vb9pcIZ29757M4Fkes1a">WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/artiy_apps">Instagram</a></li>
+          <li><a href="https://www.facebook.com">Facebook</a></li>
         </ul>
-    </div>
+      </div>
 
-    <div class="collections" id="collections">
-        <h2>Collections</h2>
-        <div class="products">
-            <div class="product" id="Trolley hamper">
-                 <a href="https://www.instagram.com/reel/DDezy7XS1Py/" target="_blank">
-                <img src="images/img2.webp">
-                 </a>
-                <h3>Trolley hamper</h3>
-                <p>₹12499</p>
-                <button onclick="location.href='Trolley%20hamper.html'">Add to Cart</button>
-            </div>
-            <div class="product" id="Wedding hamper">
-                 <a href="https://www.instagram.com/p/DCHN_mqy03z/" target="_blank">
-                <img src="images/img3.webp">
-                 </a>
-                <h3>Wedding hamper</h3>
-                <p>₹19999</p>
-                <button onclick="location.href='Wedding%20hamper.html'">Add to Cart</button>
-            </div>
-            <div class="product" id="chocolate hamper">
-                 <a href="https://www.instagram.com/p/CteIJXnSCvt/" target="_blank">
-                <img src="images/img4.webp">
-                 </a>
-                <h3>Chocolate hamper</h3>
-                <p>₹249</p>
-                <button onclick="location.href='Chocolate%20hamper.html'">Add to Cart</button>
-            </div>
-           <div class="product" id="chocolate bouquet">
-                 <a href="https://www.instagram.com/p/DAqcsStSMSo/" target="_blank">
-                <img src="images/img5.webp">
-                 </a>
-                <h3>Chocolate bouquet</h3>
-                <p>₹249</p>
-               <button onclick="location.href='Chocolate%20bouquet.html'">Add to Cart</button>
-            </div>
-            <div class="product" id="mini chocolate bouquet">
-                 <a target="_blank">
-                <img src="images/img6.webp">
-                 </a>
-                <h3>Mini chocolate bouquet</h3>
-                <p>₹109</p>
-                <button onclick="location.href='Mini%20chocolate%20bouquet.html'">Add to Cart</button>
-            </div>
-            <div class="product" id="Engagement hamper">
-                 <a href="https://www.instagram.com/p/DDly_s9SbUq/" target="_blank">
-                <img src="images/img7.webp">
-                 </a>
-                <h3>Engagement hamber</h3>
-                <p>₹1499</p>
-                <button onclick="location.href='Engagement%20hamper.html'">Add to Cart</button>
-            </div>
-            <div class="product" id="customized wallets">
-                 <a href="https://www.instagram.com/p/DDFHMXvy_CA/" target="_blank">
-                <img src="images/img8.webp" alt="Name wallet">
-                 </a>
-                <h3>Name wallet</h3>
-                <p>₹299</p>
-                <button onclick="location.href='Name%20wallet.html'">Add to Cart</button>
-            </div>
-            <div class="product">
-                 <a href="https://www.instagram.com/p/DCwIdTbSfqg/" target="_blank">
-                <img src="images/img9.webp" alt="Sketch wallet">
-                 </a>
-                <h3>Sketch wallet</h3>
-                <p>₹399</p>
-                <button onclick="location.href='Sketch%20wallet.html'">Add to Cart</button>
-            </div>
-            <div class="product" id="A4 frame">
-                 <a href="https://www.instagram.com/p/DAtFYe6y9ZP/" target="_blank">
-                <img src="images/img10.webp" alt="Frames">
-                 </a>
-                <h3>Frames</h3>
-                <p>₹349</p>
-                <button onclick="location.href='Frames.html'">Add to Cart</button>
-            </div>
-            <div class="product" id="chocolate box">
-                 <a href="https://www.instagram.com/p/DDly_s9SbUq/" target="_blank">
-                <img src="images/img11.webp" alt="Chocolate box">
-                 </a>
-                <h3>Chocolate box</h3>
-                <p>₹1799</p>
-                <button onclick="location.href='Chocolate%20box.html'">Add to Cart</button>
-            </div>
-            <div class="product" id="hamper set">
-                 <a href="https://www.instagram.com/p/C-nN0W7y0HD/" target="_blank">
-                <img src="images/img12.webp" alt="Hamper set">
-                 </a>
-                <h3>Hamper set</h3>
-                <p>₹2499</p>
-                <button onclick="location.href='Hamper%20set.html'">Add to Cart</button>
-            </div>
-            <div class="product" id="Flower bouquet">
-                 <a href="https://www.instagram.com/p/DCJu79jysSp/" target="_blank">
-                <img src="images/img13.webp" alt="Flower bouquet">
-                 </a>
-                <h3>Flower bouquet</h3>
-                <p>₹899</p>
-                <button onclick="location.href='Flower%20bouquet.html'">Add to Cart</button>
-            </div>
-            <div class="product" id="gift box">
-                 <a href="https://www.instagram.com/p/DA0xtAGSJEM/" target="_blank">
-                <img src="images/img14.webp" alt="Gift box">
-                 </a>
-                <h3>Gift box</h3>
-                <p>₹249</p>
-                <button onclick="location.href='Gift%20box.html'">Add to Cart</button>
-            </div>
-            <div class="product" id="Birthday hamper">
-                 <a href="https://www.instagram.com/p/C0nw7vFLg2R/" target="_blank">
-                <img src="images/img15.webp" alt="Birthday gift">
-                 </a>
-                <h3>Birthday gift</h3>
-                <p>₹1699</p>
-                <button onclick="location.href='Birthday%20gift.html'">Add to Cart</button>
-            </div>
-            <div class="product" id="ring album">
-                 <a href="https://www.instagram.com/p/DCZMDdySAx6/?igsh=MTRkbzg5M2twdmJsZw==" target="_blank">
-                <img src="images/img16.webp" alt="Ring album">
-                 </a>
-                <h3>Ring album</h3>
-                <p>₹149</p>
-                <button onclick="location.href='Ring%20album.html'">Add to Cart</button>
-            </div>
-            <div class="product" id="birthday cards">
-                 <a href="https://www.instagram.com/p/DBJXLdHScDO/" target="_blank">
-                <img src="images/img17.webp" alt="Photo gift card">
-                 </a>
-                <h3>Photo gift card</h3>
-                <p>₹99</p>
-                <button onclick="location.href='Photo%20gift%20card.html'">Add to Cart</button>
-            </div>
-            <div class="product" id="dress hamper">
-                 <a href="https://www.instagram.com/p/DBEOOS2SFv3/" target="_blank">
-                <img src="images/img18.webp" alt="Dress hamper">
-                 </a>
-                <h3>Dress hamper</h3>
-                <p>₹699</p>
-                <button onclick="location.href='Dress%20hamper.html'">Add to Cart</button>
-            </div>
-            <div class="product" id="ceremony box">
-                 <a target="_blank">
-                <img src="images/img19.webp" alt="Ceremony box">
-                 </a>
-                <h3>Ceremony box</h3>
-                <p>₹49</p>
-                <button onclick="location.href='Cermony%20box.html'">Add to Cart</button>
-            </div>
-            <div class="product" id="money tower">
-                 <a target="_blank">
-                <img src="images/img20.webp" alt="Money tower">
-                 </a>
-                <h3>Money tower</h3>
-                <p>₹1199</p>
-                <button onclick="location.href='Money%20tower.html'">Add to Cart</button>
-            </div>
+      <div class="footer-col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col gallery-col">
+        <h4>Gallery</h4>
+        <div class="footer-gallery">
+          <a href=""><img src="images/img1.webp" alt=""></a>
+          <a href=""><img src="images/img2.webp" alt=""></a>
+          <a href=""><img src="images/img3.webp" alt=""></a>
+          <a href=""><img src="images/img4.webp" alt=""></a>
         </div>
+      </div>
+
     </div>
 
-    <div class="feedback">
-        <h2>Feedback</h2>
-        <form>
-            <textarea placeholder="Write your feedback here..." rows="4" cols="50"></textarea><br>
-            <button type="submit">Submit</button>
-        </form>
+    <div class="footer-bottom">
+      <p>©2020 <a href="index.html">Artiy Apps</a> | powered by <a href="#am" id="am">AM Studio</a></p>
     </div>
 
-    <div class="footer">
-        <p>©2020 <a href="index.html" class="custom-link">Artiy Apps</a> | Powered by <a href="#AM Studio" class="custom-link">AM Studio</a></p>
-    </div>
+  </footer>
+  <script src="search.js"></script>
+
 </body>
-</html>
+
+    </html>
