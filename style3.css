@@ -111,6 +111,12 @@ body {
   border-radius: 50%;
 }
 
+.custom-link {
+            color: inherit; 
+            text-decoration: none; 
+            cursor: pointer; 
+        }
+
 .categories, .collections {
   padding: 20px;
 }
