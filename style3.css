@@ -190,6 +190,38 @@ body {
             border-radius: 8px;
             transition: background-color 0.3s;
         }
+.product-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 12px 24px;
+  background: #636363;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 15px;
+
+  transition: all 0.3s ease;
+}
+
+/* ICON */
+.product-btn i {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+/* HOVER */
+.product-btn:hover {
+  background: #0089BB;
+  transform: translateY(-2px);
+}
+
+/* ICON MOVE (premium touch) */
+.product-btn:hover i {
+  transform: translateX(4px);
+}
 
         .square {
             background-color: #636363;
