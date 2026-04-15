@@ -134,6 +134,12 @@ body {
             text-align: center;
         }
 
+.products-section {
+  background: #EDEDED;
+  padding: 40px 10%;
+  text-align: center;
+}
+
         .product-heading {
             font-size: 30px;
             margin-bottom: 20px;
