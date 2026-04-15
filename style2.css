@@ -127,6 +127,9 @@ body {
 .contact-wrapper {
   background: #EDEDED;
   padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 .contact-wrapper .container {
   display: flex;
