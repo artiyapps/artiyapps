@@ -125,11 +125,13 @@ body {
 
 /* CONTACT BOXES */
 .contact-wrapper {
+  background: #EDEDED;
+  padding: 40px 0;
+}
+.contact-wrapper .container {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  padding: 40px 0;
-  background: #EDEDED;
 }
 
 .contact-box {
