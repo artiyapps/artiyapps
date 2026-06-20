@@ -1,0 +1,80 @@
+/* Shared, optional entrance motion for elements with no existing animation. */
+.motion-reveal {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+.motion-reveal.is-visible {
+  animation-duration: 460ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  animation-fill-mode: both;
+}
+
+.motion-reveal--fade.is-visible {
+  animation-name: motion-fade-in;
+}
+
+.motion-reveal--slide-up.is-visible {
+  animation-name: motion-slide-up;
+}
+
+.motion-reveal--zoom-in.is-visible {
+  animation-name: motion-zoom-in;
+}
+
+@keyframes motion-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes motion-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes motion-zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes motion-slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-reveal,
+  .motion-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
