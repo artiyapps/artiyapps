@@ -1,6 +1,6 @@
 # Artiy Apps
 
-Artiy Apps is a small online ordering website for a handmade crafting business.
+Artiy Apps is a online ordering website for a handmade crafting business.
 
 Customers can browse and order thoughtful gifts for special occasions, including:
 
@@ -13,7 +13,7 @@ The goal is to make it easy to order beautiful, personal gifts for the people yo
 
 ## Website
 
-Visit: [https://www.instagram.com/artiy_apps](https://artiyapps.pages.dev)
+Visit: [https://www.artiyapps.com](https://artiyapps.pages.dev)
 
 ## About
 
