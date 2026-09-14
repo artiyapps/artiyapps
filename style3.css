@@ -384,3 +384,120 @@ body {
   }
 
 }
+/* ================= IMAGE LIGHTBOX ================= */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+/* LARGE IMAGE */
+.lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 4px;
+  user-select: none;
+}
+
+/* CLOSE BUTTON */
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 35px;
+  font-weight: 300;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.lightbox-close:hover {
+  color: #0089BB;
+}
+
+/* PREVIOUS / NEXT */
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 45px;
+  cursor: pointer;
+  padding: 15px;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.lightbox-prev {
+  left: 20px;
+}
+
+.lightbox-next {
+  right: 20px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  color: #0089BB;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* IMAGE NUMBER */
+.lightbox-counter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+
+/* ================= LIGHTBOX MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .lightbox-image {
+    max-width: 92%;
+    max-height: 82%;
+  }
+
+  .lightbox-close {
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+  }
+
+  .lightbox-prev,
+  .lightbox-next {
+    font-size: 32px;
+    padding: 10px;
+  }
+
+  .lightbox-prev {
+    left: 5px;
+  }
+
+  .lightbox-next {
+    right: 5px;
+  }
+
+  .lightbox-counter {
+    bottom: 15px;
+    font-size: 13px;
+  }
+
+}
